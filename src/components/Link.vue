@@ -72,4 +72,31 @@
     a:hover {
         transform: translateY(10px) scale(1.01);
     }
+
+    @media screen and (max-width: 940px) {
+        #links {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 95%;
+            min-width: 300px;
+            height: auto;
+	    }
+
+        a {
+            width: 100%;
+            height: 50px;
+	    }
+
+        a:hover, a:active {
+            transform: translateY(0px) scale(1);
+            background-color: var(--back);
+            color: var(--front);
+        }
+
+        a:active svg, a:hover svg {
+            fill: var(--front);
+        }
+    }
 </style>
