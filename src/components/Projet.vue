@@ -35,6 +35,8 @@
         height: auto;
         margin: 0 auto;
 		border: 1px solid var(--front);
+        border-top: none;
+        border-bottom: none;
     }
 
     h3 {
@@ -45,9 +47,9 @@
         flex-wrap: nowrap;
         width: 100%;
         align-self: center;
-        font-size: 1.5em;
+        font-size: 1.4em;
         padding: 15px 0;
-        border-bottom: 1px solid var(--front);
+        border-top: none;
     }
 
     h3 svg {
@@ -60,7 +62,6 @@
         height: auto;
         width: 100%;
         display: flex;
-        /* flex-direction: column; */
         align-items: center;
         flex-wrap: wrap;
         flex-shrink: 1;
@@ -83,12 +84,10 @@
         width: 100%;
         transition-duration: 350ms;
         transition-property: all;
-        filter: grayscale(1);
     }
 
     .card_project:hover img {
         transform: scale(1.1);
-        filter: grayscale(0);
     }
 
     @media screen and (max-width: 940px) {
@@ -111,7 +110,6 @@
 
         .card_project:hover img, .card_project:active img {
             transform: scale(1.1);
-            filter: grayscale(0);
         }
     }
 </style>

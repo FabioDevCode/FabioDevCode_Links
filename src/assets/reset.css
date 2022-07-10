@@ -9,6 +9,7 @@
 :root {
     --back: #101010;
     --front: #FFFFFF;
+    --front2: #EEEEEE;
     --grey: #637081;
 }
 
@@ -25,4 +26,32 @@ html {
 body {
     font-family: 'Oswald', sans-serif;
     min-width: 320px;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(18, 18, 18) rgb(243, 243, 243, .2);
+}
+
+*::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(40, 40, 40, .5);
+}
+
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--front);
+}
+
+::selection {
+    background-color: var(--front);
+    color: var(--back);
 }

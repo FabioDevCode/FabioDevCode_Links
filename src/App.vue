@@ -1,11 +1,10 @@
 <template>
+
 	<Header />
-
 	<Link />
-
 	<Projet />
-
 	<Footer />
+
 </template>
 <!----------Template / Script---------->
 <script>
@@ -17,15 +16,9 @@
 	export default {
     name: "FabioDevCode",
     components: { Header, Link, Projet, Footer },
-		data() {
-			return {
-
-			}
-		}
 	}
 </script>
 <!----------Script / Style---------->
 <style>
 	@import './assets/reset.css';
-
 </style>

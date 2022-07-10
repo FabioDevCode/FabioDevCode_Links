@@ -29,9 +29,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        border-radius: 10px 10px 0 0;
         border: 1px solid white;
         border-bottom: none;
-        border-radius: 10px 10px 0 0;
     }
 
     header, h1, h2 {
@@ -111,6 +111,15 @@
             margin-right: -2px;
             cursor: default;
         }
-    }
 
+        header:hover h1 {
+            letter-spacing: 5px;
+            margin-right: -5px;
+        }
+
+        header:hover h2 {
+            letter-spacing: 2px;
+            margin-right: -2px;
+        }
+    }
 </style>

@@ -42,8 +42,8 @@
         min-width: 900px;
         height: 50px;
         margin: 0 auto;
-        border: 1px solid var(--front);
-        border-top: none;
+        border-left: 1px solid var(--front);
+        border-right: 1px solid var(--front);
 	}
 
 	a {
@@ -85,8 +85,9 @@
 	    }
 
         a {
-            width: 100%;
             height: 50px;
+            width: 100%;
+            min-width: 300px;
 	    }
 
         a:hover, a:active {
