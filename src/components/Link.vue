@@ -40,7 +40,7 @@
         align-items: center;
 		width: 60%;
         min-width: 900px;
-        height: 50px;
+        height: 60px;
         margin: 0 auto;
         border-left: 1px solid var(--front);
         border-right: 1px solid var(--front);
@@ -64,13 +64,23 @@
 
     svg {
 		fill: var(--back);
-		height: 30px;
+		height: 32px;
 		width: 40px;
         margin-right: 10px;
 	}
 
-    a:hover {
-        transform: translateY(10px) scale(1.01);
+    p, svg, a {
+        transition: all 400ms ease-in-out;
+    }
+
+    a:hover svg {
+        transform: rotate(450deg);
+    }
+    a:hover p {
+        transform: scale(1.12);
+    }
+    a:active {
+        transform: scale(.95);
     }
 
     @media screen and (max-width: 940px) {
