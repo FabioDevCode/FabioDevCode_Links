@@ -1,13 +1,8 @@
 <template>
-    <kinesis-container>
-
-        <kinesis-element id="card" :strength="40">
-            <div class="bandeau">
-                <h1>Développeur Web</h1>
-            </div>
-
-            <kinesis-element class="title" :strength="40">
-
+    <kinesis-container perspective="1000">
+        <kinesis-element id="card" :strength="-2000" type="depth">
+            <kinesis-element class="title" :strength="-20" type="translate">
+                <h1>FabioDevCode</h1>
             </kinesis-element>
 
 
@@ -35,26 +30,30 @@
 <!---------- Script / Style ---------->
 <style scoped>
     #card {
+        position: relative;
         background: rgb(2,0,36);
-        background: linear-gradient(-90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);
-        height: 540px;
-        width: 840px;
+        background: url('/abstract.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        width: 800px;
         border-radius: 25px;
+        border: 1px solid grey;
         overflow: hidden;
     }
 
-    .bandeau {
-        height: 50px;
-        width: 100%;
-        background-color:  rgb(2,0,36);
+    .title {
         display: flex;
         justify-content: center;
         align-items: center;
+        color: whitesmoke;
+        mix-blend-mode: difference;
+        height: 60px;
+        width: 100%;
     }
 
-    .title {
-        display: inline-block;
-        background-color: teal;
+    h1 {
+        text-shadow: 10px 10px 20px rgba(18,18, 18, .5);
     }
 
 
