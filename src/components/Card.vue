@@ -1,33 +1,59 @@
 <template>
     <kinesis-container perspective="1000">
-        <kinesis-element id="card" :strength="-2000" type="depth">
-            <kinesis-element class="title" :strength="-20" type="translate">
-                <h1>FabioDevCode</h1>
+
+        <kinesis-element id="card" :strength="-30" type="depth">
+            <kinesis-element class="title" :strength="-80" type="translate">
+                <h1>DEVELOPPEUR WEB</h1>
             </kinesis-element>
 
+            <kinesis-element id="links" :strength="-100" type="translate">
+                <a :href="linkedin" id="linkedin" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+                    <p>LinkedIn</p>
+                </a>
+                <a :href="github" id="github" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                    <p>Github</p>
+                </a>
+                <a :href="twitter" id="twitter" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+                    <p>Twitter</p>
+                </a>
+                <a :href="instagram" id="instagram" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                    <p>Instagram</p>
+                </a>
+            </kinesis-element>
 
+            <kinesis-element id="photo" :strength="-80" type="translate">
+                <kinesis-element :strength="20" type="translate">
+                    <img src="https://media-exp1.licdn.com/dms/image/C4E03AQEL6C_4NL4XTQ/profile-displayphoto-shrink_200_200/0/1651480539752?e=1663804800&v=beta&t=P2T1LV6m3pgz49zXx5FJiF5pM4mx4R4j6SscYchKIGo" alt="Fabio R. LOPES">
+                </kinesis-element>
+                <h2>FABIO R. LOPES</h2>
+            </kinesis-element>
         </kinesis-element>
 
-
+        <div id="bloc"></div>
 
     </kinesis-container>
 </template>
-<!---------- Template / Script ---------->
+
+
 <script>
     export default {
         name: 'Card',
         data() {
             return {
-
+                linkedin: 'https://www.linkedin.com/in/fabiodevcode/',
+                github: 'https://github.com/FabioDevCode',
+                twitter: 'https://twitter.com/fabiodevcode',
+                instagram: 'https://www.instagram.com/fabiodevcode/',
             }
-        },
-        methods: {
-
-
         },
     }
 </script>
-<!---------- Script / Style ---------->
+
+
 <style scoped>
     #card {
         position: relative;
@@ -39,7 +65,19 @@
         width: 800px;
         border-radius: 25px;
         border: 1px solid grey;
-        overflow: hidden;
+    }
+
+    #bloc {
+        z-index: -10;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 250px;
+        width: 550px;
+        border-radius: 50%;
+        background-color: rgba(250, 250, 250, .05);
+        box-shadow: 0 0 150px 250px rgba(250, 250, 250, .05);
     }
 
     .title {
@@ -53,8 +91,99 @@
     }
 
     h1 {
-        text-shadow: 10px 10px 20px rgba(18,18, 18, .5);
+        cursor: default;
+        letter-spacing: 1px;
+        text-shadow: 1px 1px 2px rgb(200,200,200);
     }
 
+    /*--------Lien--------*/
+    #links {
+        position: absolute;
+        right: 0;
+		display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        height: 75%;
+        padding: 0 35px;
+	}
+
+	a {
+        background-color: #181818;
+        color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 60px;
+        border-radius: 50px;
+        line-height: 1em;
+        font-size: 1.2em;
+        letter-spacing: 1px;
+	}
+
+    a, p {
+        transition-duration: 350ms;
+        transition-property: all;
+    }
+
+    a:hover {
+        transform: scale(1.3) translateX(-55px) !important;
+    }
+
+    a:hover p {
+        transform: scale(1.1);
+    }
+
+    svg {
+        height: 50%;
+        width: auto;
+        margin-right: 20px;
+        fill: whitesmoke;
+	}
+
+    #linkedin:hover {
+        background-color: #0A66C2;
+    }
+    #github:hover {
+        background-color: #2D333B;
+    }
+    #twitter:hover {
+        background-color: #1D9BF0;
+    }
+    #instagram:hover {
+        background: #f09433;
+        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    }
+
+    #photo {
+        position: absolute;
+        left: 0;
+		display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 82%;
+        width: 60%;
+        padding-top: 60px;
+        border-radius: 300px 300px 0 0;
+        color: whitesmoke;
+        mix-blend-mode: difference;
+    }
+
+    img {
+        height: 220px;
+        widows: 220px;
+        border-radius: 40px;
+        filter: invert(1);
+    }
+
+    h2 {
+        font-family: 'Libre Barcode 39 Text', cursive;
+        font-weight: 200;
+        font-size: 3.5em;
+    }
 
 </style>

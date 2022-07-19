@@ -24,7 +24,7 @@
         name: 'Link',
         data() {
             return {
-                linkedin: 'https://www.linkedin.com/in/fabio-ramoslopes/',
+                linkedin: 'https://www.linkedin.com/in/fabiodevcode/',
                 github: 'https://github.com/FabioDevCode',
                 instagram: 'https://www.instagram.com/fabiodevcode/',
                 twitter: 'https://twitter.com/fabiodevcode',

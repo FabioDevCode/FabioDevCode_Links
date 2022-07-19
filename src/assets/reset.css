@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&family=Oswald&display=swap');
 
 *, ::before, ::after {
     box-sizing: border-box;
@@ -26,6 +26,7 @@ html {
 body {
     font-family: 'Oswald', sans-serif;
     min-width: 320px;
+    overflow-x: hidden;
 }
 
 * {
@@ -34,12 +35,12 @@ body {
 }
 
 *::-webkit-scrollbar {
-    width: 8px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
 }
 
 ::-webkit-scrollbar-track {
-    background: rgba(40, 40, 40, .5);
+    background: transparent;
 }
 
 ::-webkit-scrollbar-button {
@@ -49,9 +50,10 @@ body {
 
 ::-webkit-scrollbar-thumb {
     background: var(--front);
+    border-radius: 10px;
 }
 
 ::selection {
-    background-color: var(--front);
-    color: var(--back);
+    background-color: transparent;
+    color: auto;
 }
