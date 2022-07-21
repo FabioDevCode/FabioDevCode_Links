@@ -2,11 +2,11 @@
     <kinesis-container perspective="1000">
 
         <kinesis-element id="card" :strength="-30" type="depth">
-            <kinesis-element class="title" :strength="-80" type="translate">
+            <kinesis-element class="title" :strength="-60" type="translate">
                 <h1>DEVELOPPEUR WEB</h1>
             </kinesis-element>
 
-            <kinesis-element id="links" :strength="-100" type="translate">
+            <kinesis-element id="links" :strength="-90" type="translate">
                 <a :href="linkedin" id="linkedin" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
                     <p>LinkedIn</p>
@@ -25,8 +25,14 @@
                 </a>
             </kinesis-element>
 
-            <kinesis-element id="photo" :strength="-80" type="translate">
-                <kinesis-element :strength="20" type="translate">
+            <kenesis-element id="container_bg" :strength="0" type="translate">
+                <kinesis-element id="bg_photo" :strength="-50" type="translate">
+                    TEST
+                </kinesis-element>
+            </kenesis-element>
+
+            <kinesis-element id="photo" :strength="-60" type="translate">
+                <kinesis-element :strength="0" type="translate">
                     <img src="https://media-exp1.licdn.com/dms/image/C4E03AQEL6C_4NL4XTQ/profile-displayphoto-shrink_200_200/0/1651480539752?e=1663804800&v=beta&t=P2T1LV6m3pgz49zXx5FJiF5pM4mx4R4j6SscYchKIGo" alt="Fabio R. LOPES">
                 </kinesis-element>
                 <h2>FABIO R. LOPES</h2>
@@ -76,8 +82,8 @@
         height: 250px;
         width: 550px;
         border-radius: 50%;
-        background-color: rgba(250, 250, 250, .05);
-        box-shadow: 0 0 150px 250px rgba(250, 250, 250, .05);
+        background-color: rgba(250, 250, 250, .1);
+        box-shadow: 0 0 150px 250px rgba(250, 250, 250, .1);
     }
 
     .title {
@@ -122,7 +128,7 @@
         letter-spacing: 1px;
 	}
 
-    a, p {
+    a {
         transition-duration: 350ms;
         transition-property: all;
     }
@@ -132,7 +138,7 @@
     }
 
     a:hover p {
-        transform: scale(1.1);
+        transform: scale(1.2);
     }
 
     svg {
@@ -171,6 +177,24 @@
         border-radius: 300px 300px 0 0;
         color: whitesmoke;
         mix-blend-mode: difference;
+    }
+
+    #container_bg {
+        position: relative;
+        height: 600px;
+        width: 600px;
+        background-color: #dc2743;
+    }
+
+    #bg_photo {
+        position: absolute;
+        height: 250px;
+        width: 250px;
+        border-radius: 600px 600px 150px 150px;
+        box-shadow: 0 0 10px 10px rgba(18,18,18, .2);
+        left: 115px;
+        top: 50px;
+        background-color: rgba(255, 255, 255, .7);
     }
 
     img {
