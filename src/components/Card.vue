@@ -27,7 +27,6 @@
 
             <kenesis-element id="container_bg" :strength="0" type="translate">
                 <kinesis-element id="bg_photo" :strength="-50" type="translate">
-                    TEST
                 </kinesis-element>
             </kenesis-element>
 
@@ -194,6 +193,7 @@
         box-shadow: 0 0 10px 10px rgba(18,18,18, .2);
         left: 115px;
         top: 50px;
+        color: #181818;
         background-color: rgba(255, 255, 255, .7);
     }
 
