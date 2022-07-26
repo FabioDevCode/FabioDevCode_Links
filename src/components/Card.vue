@@ -136,10 +136,6 @@
         transform: scale(1.3) translateX(-55px) !important;
     }
 
-    a:hover p {
-        transform: scale(1.2);
-    }
-
     svg {
         height: 50%;
         width: auto;
