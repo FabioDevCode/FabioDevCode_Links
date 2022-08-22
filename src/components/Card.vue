@@ -32,7 +32,7 @@
 
             <kinesis-element id="photo" :strength="-60" type="translate">
                 <kinesis-element :strength="0" type="translate">
-                    <img src="https://media-exp1.licdn.com/dms/image/C4E03AQEL6C_4NL4XTQ/profile-displayphoto-shrink_200_200/0/1651480539752?e=1663804800&v=beta&t=P2T1LV6m3pgz49zXx5FJiF5pM4mx4R4j6SscYchKIGo" alt="Fabio R. LOPES">
+                    <img src="../../public/fabio.jpg" alt="Fabio R. LOPES">
                 </kinesis-element>
                 <h2>FABIO R. LOPES</h2>
             </kinesis-element>
